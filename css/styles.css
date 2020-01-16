@@ -1,3 +1,6 @@
+@import "/css/page.css";
+@import "/css/large.css";
+@import "/css/small.css";
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +37,8 @@ body{
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
+    
 }
 #foot{
     grid-area: foot;
@@ -43,6 +48,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
+    font-size: 1.2em;
 }
 hr {
     display: block;

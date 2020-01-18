@@ -4,33 +4,56 @@
 *{
     margin: 0;
     padding: 0;
+    
 
 }
 body{
+    
     display: grid;
     grid-template-columns: 20vw 80vw;
-    grid-template-rows: 15vh 60vh 25vh;
-    grid-template-areas: "head head"
-    "side main"
-    "foot foot"
-    ;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:"head head"
+                        "side main"
+                        "foot foot";
+                        /* grid-gap: 5px; */
     
 }
 #head{
-    display: grid;
+    
     background-color:#ebebeb;
     grid-area: head;
-    border-bottom: solid 1px #004040 ;
     background-image: url('/images/head-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-left: 50px;
     display: flex;
     align-items: center;
 }
 #main{
     grid-area: main;
-    background-color: cornflowerblue;
+    background-color: #f4f4f4;
+  
+    display: grid;
+    grid-template-columns:39vw 39vw;
+    grid-template-rows:39vh 39vh;
+    grid-template-areas:"card01 card02""card03 card04";
+                        grid-gap: 2vh;
+                        justify-content: space-evenly;
 
 }
+#main[data-nav='card01']{
+    grid-area: card01;
+}
+#main[data-nav='card02']{
+    grid-area: card02;
+}
+#main[data-nav='card03']{
+    grid-area: card03;
+}
+#main[data-nav='card04']{
+    grid-area: card04;
+}
+
 #side{
     grid-area: side;
     background-color: teal;
@@ -42,14 +65,17 @@ body{
 }
 #foot{
     grid-area: foot;
-    background-color: #34495e;
+    background-color: #0a111d;
     color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: cursive;
-    font-size: 1.2em;
+    font-size: 1em;
+    flex-direction: column;
+
+ 
 }
 hr {
     display: block;
@@ -58,10 +84,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 1 px;
+    border-width: 1px;
   }
   .nav_cont{
-      height: 60vh;
+      height: 80vh;
   }
   .nav_cont, ul{
       display:flex;
@@ -71,7 +97,7 @@ hr {
       justify-content: space-between;
   }
   .nav_cont,ul li{
-background-color: #004040;
+
     flex: 1;
     font-size: 2em;
     padding: 0;
@@ -98,43 +124,58 @@ background-color: #004040;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
-    height: 100%;
-    background-color:#ebebeb;
+    width: 39vw;
+    height: 39vh;
+    background-color:#f4f4f4;
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: none;
-    overflow: hidden;
+    /* display: none;
+    overflow: hidden; */
     transition: max-height 0.2s ease-out;
+   
+    border: solid 1px gray;
+    
 
   }
-  .active, .butt:hover {
+  /* .card_cont{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
+  left: 40VW;
+  top: 50V;
+  z-index: 1;
+
+  } */
+  .active {
     background-color: #611824 ;
   }
   .card img{
-      width:  100%;
-      height: 80%;
-      z-index: -1;
+      width: 39vw;
+      height: 30vh;
+      /* position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0; */
       display: flex;
       
+      box-shadow: 0 4px 55px 0 rgba(0,0,0,0.3);
   }
   .card .page_anchor{
-    display: block;
+    /* display: block; */
     padding: 0.2em;
     font-weight: bold;
     text-decoration: none;
     color: #000;
   }
-  .card .page_anchor:active{
-      color: #000;
+  .card .page_anchor:hover {
+      color: #FFF;
   }
   .card button{
-      width: 15vw;
-      height: 7vh;
+      width: 12vw;
+      height: 5vh;
       padding: 5px;
-      margin: 5px;
-      z-index: 1;
+      /* margin-bottom: 150px; */
+     
   }
   .card button:hover{
     background: #34495e;
@@ -148,10 +189,27 @@ background-color: #004040;
 }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,05);
   }
   
   /* Add some padding inside the card container */
-  .card_cont {
-    padding: 2px 16px;
+  .card_cont h2 {
+    font-size: medium   ;
+  }
+  .social_icon img{
+      width: 3vw;
+      height: 5vh;
+      background: none;
+      margin: 0;
+      padding-top: 2vh;
+  }
+  .social_icons{
+      display: flex;
+      flex-direction: row;
+      
+  }
+  .foot p{
+      margin: 0;
+      padding: 0;
+    
   }

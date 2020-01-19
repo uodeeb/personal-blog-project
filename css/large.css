@@ -1,0 +1,217 @@
+@media  (min-width: 601px)and (max-width:999px) {
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home_body{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 12vh 10vh 100vh 10vh;
+    grid-template-areas: "head" "side" "main" "foot";
+}
+
+#head{
+    grid-area: head;
+    background-image: url("/images/head-bg.jpg");
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#main{
+    display: grid;
+    grid-template-columns:45vw 50vw;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+    "card01 card02"
+    "card03 card04";
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-left: 25px;
+}
+
+#side{
+    grid-area: side;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+
+}
+
+#main div[data-nav='card01']{
+    grid-area: card01;
+}
+
+#main div[data-nav='card02']{
+    grid-area: card02;
+}
+
+#main div[data-nav='card03']{
+    grid-area: card03;
+
+}
+#main div[data-nav='card04']{
+    grid-area: card04;
+}
+
+.card{
+    width: 45vw;
+    margin: 1vh;
+}
+
+#foot{
+    grid-area: foot;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot img{
+    width: 7.5vw;
+    height: 6vh;
+}
+
+.card img{
+    width: 45vw;
+    height: 38vh;
+}
+
+#nav_cont{
+    display: flex;
+}
+
+#nav_cont ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+#nav_cont ul li{
+    flex: 1;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_cont ul li button{
+    height: 7vh;
+    font-size: 0.8em;
+    width: 22vw;
+    padding: 5px;
+    border: solid 1px #34495e;
+    border-radius: 15px;
+    margin: 0.2vh;
+    background: none;
+}
+
+#nav_cont ul li button:hover{
+    background: #34495e;
+    color: #fff;
+    transition: ease 0.5s all;
+    -webkit-transition: border-color 1s ease;
+        -moz-transition: border-color 1s ease;
+    -o-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,05);
+}
+
+/* Add some padding inside the card container */
+.card_cont{
+    display: grid;
+    width: 45vw;
+    grid-template-columns: 20vw 5vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: "title title butt";
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.card_cont h2{
+    grid-area: title;
+}
+
+.card_cont button{
+    width:18vw;
+    height: 8vh;
+    grid-area: butt;
+    border: solid 1px #34495e;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 1vh;
+    background: none;
+    align-items: center; 
+}
+
+.card_cont .page_anchor{
+    text-decoration: none;
+    color: #34495e;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.social_icons{
+    list-style: none;
+}
+
+.card_cont h2 {
+    font-size:1.3em  ;
+}
+
+.social_icons{
+    display: flex;
+    flex-direction: row;
+}
+
+#page_foot .social_icons img{
+    width: 6vw;
+    height: 5.5vh;
+}
+
+#foot .social_icons img{
+    width: 6vw;
+    height: 5.5vh;
+}
+#auth_info{
+    display: grid;
+    grid-template-columns: 20vw 50vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: "my_img my_data back";
+    justify-content: center;
+    align-items: center;
+}
+
+#img_cont{
+    grid-area: my_img;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#auth_data{
+    grid-area: my_data;
+    padding: 5px;
+    padding-left: 55px;
+}
+
+#back{
+    grid-area: back;
+    padding: 0;
+}
+
+}
+
+

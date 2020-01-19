@@ -2,42 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width    , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>The Dev Magazine</title>
 </head>
-<body>
+<body id="home_body">
     <header class="" id="head">
         <img src="images/logo02.png" alt="logo" width="100" height="100">
     </header>
-    <hr>
     <aside id="side">
         <nav id="nav_cont">
-        <ul id="menu">
-            <li class="menu_item">
-                <button class="butt" data-nav="card01">INTRO</button>
-            </li>
-            <li class="menu_item">
-                <button class="butt" data-nav="card02">HTML5</button>
-            </li>
-            <li class="menu_item">
-                <button class="butt" data-nav="card03">CSS</button>
-            </li>
-            <li class="menu_item">
-                <button class="butt" data-nav="card04">JS</button>
-            </li>
-        </ul>
-    </nav>
-        
-        
-        
+            <ul id="menu">
+                <li class="menu_item" >
+                    <button onclick="window.location.href = 'html/page01.html';" class="butt" data-nav="card01">INTRO</button>
+                </li>
+                <li class="menu_item" >
+                    <button onclick="window.location.href = 'html/page02.html';" class="butt" data-nav="card02">HTML5</button>
+                </li>
+                <li class="menu_item" >
+                    <button onclick="window.location.href = 'html/page03.html';" class="butt" data-nav="card03">CSS</button>
+                </li>
+                <li class="menu_item" >
+                    <button onclick="window.location.href = 'html/page04.html';" class="butt" data-nav="card04">JS</button>
+                </li>
+            </ul>
+        </nav>  
     </aside>
     <main id="main">
-        <!-- <img id="main_img" src="images/logo02.png" alt="logo" > -->
-
         <div  class="card" data-nav="card01">
-            <img src="images/frontend-web-development.jpg" alt="front_end">
+            <figure>
+                <img src="images/frontend-web-development.jpg" alt="front_end">
+                <figcaption>A Quick over view of FEND</figcaption>
+            </figure>
             <div class="card_cont">
                 <h2>Introduction to Front-End Development</h2>
                 <button class="more">
@@ -46,7 +43,10 @@
             </div>
         </div>
         <div class="card" data-nav="card02">
-            <img src="images/html5.jpg" alt="front_end">
+            <figure>
+                <img src="images/html5.jpg" alt="front_end">
+                <figcaption>A Quick over view of HTML</figcaption>
+            </figure>
             <div class="card_cont">
                 <h2>HTML5</h2>
                 <button class="more">
@@ -55,7 +55,10 @@
             </div>
         </div>
         <div class="card" data-nav="card03">
-            <img src="images/css3.webp" alt="front_end">
+            <figure>
+                <img src="images/css3.webp" alt="front_end">
+                <figcaption>A Quick over view of CSS</figcaption>
+            </figure>
             <div class="card_cont">
                 <h2>CSS3</h2>
                 <button class="more">
@@ -64,7 +67,10 @@
             </div>
         </div>
         <div class="card" data-nav="card04">
-            <img src="images/js.png" alt="front_end">
+            <figure>
+                <img src="images/js.png" alt="front_end">
+                <figcaption>A Quick over view of JavaScript</figcaption>
+            </figure>
             <div class="card_cont">
                 <h2>JavaScript</h2>
                 <button class="more">
@@ -74,26 +80,24 @@
         </div>
         
     </main>
-
     <footer id="foot">
         <ul class="social_icons">
             <li class="social_icon">
                 <a href="https://www.facebook.com/uodeeb">
-                <img src="images/fb-icon.png" alt="facebook" srcset="">
+                    <img src="images/fb-icon.png" alt="facebook" srcset="">
                 </a>
             </li>
             <li class="social_icon">
                 <a href="https://www.linkedin.com/in/uodeeb/">
-                <img src="images/in-icon.png" alt="linkedin" srcset="">
+                    <img src="images/in-icon.png" alt="linkedin" srcset="">
                 </a>
             </li>
             <li class="social_icon">
                 <a href="https://twitter.com/uodeeb">
-                <img src="images/tw-icon.png" alt="twitter" srcset="">
+                    <img src="images/tw-icon.png" alt="twitter" srcset="">
                 </a>
             </li>
         </ul>
-
     </footer>
     <script src="js/app.js"></script>
 </body>

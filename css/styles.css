@@ -1,5 +1,5 @@
 
-@import '/css/small.css'; 
+@import '/css/small.css ';
 @import "/css/large.css";
 @import "/css/page.css";
 
@@ -181,8 +181,8 @@ font-size: medium;
 }
 
 .social_icon img{
-    width: 3vw;
-    height: 5vh;
+    width: 5.vw;
+    height: 8vh;
     background: none;
     margin: 0;
     padding-top: 2vh;

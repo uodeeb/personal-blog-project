@@ -23,7 +23,7 @@
 #head{
     background-color:#ebebeb;
     grid-area: head;
-    background-image: url('../images/head-bg.jpg');
+    background-image: url('/images/head-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 50px;

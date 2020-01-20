@@ -1,7 +1,7 @@
 
-@import '/css/small.css'; 
-@import "/css/large.css";
-@import "/css/page.css";
+@import '../css/small.css'; 
+@import "../css/large.css";
+@import "../css/page.css";
 
 @media (min-width: 1000px){
 

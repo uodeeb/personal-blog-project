@@ -15,7 +15,7 @@
 
 #head{
     grid-area: head;
-    background-image: url("/images/head-bg.jpg");
+    background-image: url("../images/head-bg.jpg");
     padding-left: 35px;
     display: flex;
     align-items: center;

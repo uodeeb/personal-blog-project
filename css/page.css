@@ -11,6 +11,7 @@
 #page_head{
     grid-area: page_head;
     background-color: #0a111d;
+    background-image: url("../images/head-bg.jpg");
     color: #fff;
     text-align: center;
     display: flex;
@@ -40,7 +41,7 @@
 }
 
 #img_cont{
-    background-image: url("/images/p.jpg");
+    background-image: url("../images/p.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 40vw;

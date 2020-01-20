@@ -14,7 +14,7 @@
 #home_body{
     display: grid;
     grid-template-columns: 20vw 80vw;
-    grid-template-rows: 10vh 90vh 10vh;
+    grid-template-rows: 10vh 92vh 10vh;
     grid-template-areas:"head head"
                         "side main"
                         "foot foot";

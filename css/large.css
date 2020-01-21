@@ -66,12 +66,16 @@
 
 #foot{
     grid-area: foot;
-    background-color: #34495e;
+    background-color: #0a111d;
+    color: #fff;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
+    font-size: 1em;
+    flex-direction: column;
 }
-
 #foot img{
     width: 7.5vw;
     height: 6vh;

@@ -90,6 +90,7 @@
 #page_main{
 display: flex;
 font-weight: bold;
+font-style: italic;
 flex-direction: column;
 justify-content: center;
 align-items: center;

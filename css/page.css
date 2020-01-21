@@ -87,3 +87,16 @@
     height: 11vh;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,05);
 }
+#page_main{
+display: flex;
+font-weight: bold;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.7em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#quote{
+    color: #fff;
+    height: 10vh;
+}
